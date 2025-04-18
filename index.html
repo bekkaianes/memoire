@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakat App</title>
+</head>
+
+<body>
+    <h1>Welcome to My Electron App</h1>
+    <div id="names"></div>
+    <button onclick="openBinifcaireWindow()">المستفيدين</button>
+    <button onclick="openOrganisationWindow()">المؤسسات</button>
+    <button onclick="openMantantWindow()">المبلغ</button>
+
+    <script >
+        function openBinifcaireWindow() {
+            window.electronAPI.openBinifcaireWindow();
+        }
+
+        function openOrganisationWindow() {
+            window.electronAPI.openOrganisationWindow();
+        }
+        function openMantantWindow() {
+            window.electronAPI.openMantantWindow();
+        }
+    </script>
+<!-- <script src="binificaire/binificaire.js"></script> -->
+
+</body>
+</html>
